@@ -1,0 +1,24 @@
+{
+  "name": "fa-icon",
+  "version": "0.0.0",
+  "description": "The simple component wraps font awesome icons",
+  "main": "lib/index.js",
+  "author": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "coffee --print src/*.coffee | babel --presets env,react > lib/index.js",
+    "pub": "npm run build && npm publish"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "coffeescript": "^2.0.0-beta5"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1"
+  }
+}
